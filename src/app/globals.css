@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 .bg-1538 {
-  @apply absolute object-cover w-full h-[1024px] -z-10;
+  @apply absolute object-cover w-full h-[1024px] -z-10 hidden 2xl:block;
+}
+.bg-1280 {
+  @apply absolute object-cover w-full h-[960px] -z-10 hidden 2xl:hidden xl:block;
+}
+.bg-1024 {
+  @apply absolute object-cover w-full h-[832px] -z-10 hidden 2xl:hidden xl:hidden lg:block;
+}
+.bg-768 {
+  @apply absolute object-cover w-full h-[1194px] -z-10 hidden 2xl:hidden xl:hidden lg:hidden sm:block;
+}
+.bg-280 {
+  @apply absolute object-cover w-full h-[1194px] -z-10 block 2xl:hidden xl:hidden lg:hidden sm:hidden;
 }
 
