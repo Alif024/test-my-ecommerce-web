@@ -18,3 +18,48 @@
   @apply absolute object-cover w-full h-[1194px] -z-10 block 2xl:hidden xl:hidden lg:hidden sm:hidden;
 }
 
+.Contents {
+  @apply container mx-auto px-5;
+}
+
+@media (min-width: 1440px) {
+  .logo-img {
+    @apply relative w-[215px] h-[145px];
+  }
+}
+@media (max-width: 1440px) {
+  .logo-img {
+    @apply relative w-[195px] h-[132px];
+  }
+}
+@media (max-width: 1280px) {
+  .logo-img {
+    @apply relative w-[188px] h-[128px];
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .navbar {
+    @apply flex justify-between pt-7;
+  }
+  .nav-btns {
+    @apply flex gap-9;
+  }
+
+  .nav-btns p {
+    @apply text-[1.8vw] text-[#FFE5B4] pt-5;
+  }
+  .nav-btns p.active {
+    @apply text-white;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 1024px) {
+  .navbar {
+    @apply flex justify-center items-center pt-7;
+  }
+  .nav-btns {
+    @apply hidden gap-9;
+  }
+}
