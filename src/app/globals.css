@@ -108,3 +108,30 @@
     @apply relative w-[138px] h-[78px];
   }
 }
+
+@media (min-width: 1920px) {
+  .hero-section .burger-hero-img{
+    @apply w-[35vw] h-auto;
+  }
+}
+@media (max-width: 1280px) {
+  .hero-section .burger-hero-img{
+    @apply w-[40vw] h-auto;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section {
+    @apply flex w-full h-auto;
+  }
+  .hero-section .detail-product-hero {
+    @apply flex w-[50%] h-auto;
+  }
+  .hero-section .burger-hero-img {
+    @apply flex w-[50%] h-auto;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-section {
+    @apply flex flex-col-reverse justify-center items-center;
+  }
+}

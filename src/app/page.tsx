@@ -5,6 +5,7 @@ import Bg1024 from "@/assets/bg-1024.svg";
 import Bg768 from "@/assets/bg-768.svg";
 import Bg280 from "@/assets/bg-280.svg";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 const allBgSize = [
   {
@@ -55,6 +56,7 @@ export default function Home() {
 
       <div className="Contents">
         <Navbar />
+        <Hero/>
       </div>
     </main>
   );
