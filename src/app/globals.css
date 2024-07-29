@@ -38,7 +38,6 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   .nav-mobile {
     @apply hidden;
@@ -109,13 +108,56 @@
   }
 }
 
+.hero-section .detail-product-hero .info .btns .buy-now {
+  @apply bg-[#FFA500] rounded-full text-white;
+}
+.hero-section .detail-product-hero .info .btns .buy-now:hover {
+  @apply bg-[#FFD580];
+}
+.hero-section .detail-product-hero .info .btns .see-more {
+  @apply text-[#FFA500] underline underline-offset-8;
+}
+.hero-section .detail-product-hero .info .btns .see-more:hover {
+  @apply text-[#FFD580];
+}
+
 @media (min-width: 1920px) {
-  .hero-section .burger-hero-img{
+  .hero-section .burger-hero-img {
     @apply w-[35vw] h-auto;
+  }
+  .hero-section .detail-product-hero .info .text h1 {
+    @apply text-[64px];
+  }
+  .hero-section .detail-product-hero .info .text h2 {
+    @apply text-[48px] pt-[74px];
+  }
+  .hero-section .detail-product-hero .info .text p {
+    @apply text-[24px] pr-24 pt-[29px] pb-[39px];
+  }
+
+  .hero-section .detail-product-hero .info .time-orders {
+    @apply flex gap-[79px] mb-[69px];
+  }
+  .hero-section .detail-product-hero .info .time-orders .readyin,
+  .hero-section .detail-product-hero .info .time-orders .delivery {
+    @apply flex gap-[20px];
+  }
+  .hero-section .detail-product-hero .info .time-orders h4 {
+    @apply text-[24px];
+  }
+  .hero-section .detail-product-hero .info .time-orders h5 {
+    @apply text-[20px];
+  }
+
+  .hero-section .detail-product-hero .info .btns {
+    @apply text-[24px] flex gap-[38px];
+  }
+  .hero-section .detail-product-hero .info .btns .buy-now {
+    @apply px-[67px] py-[33.5px];
   }
 }
 @media (max-width: 1280px) {
-  .hero-section .burger-hero-img{
+  .hero-section .burger-hero-img {
     @apply w-[40vw] h-auto;
   }
 }
