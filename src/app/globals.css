@@ -12,7 +12,7 @@
   @apply absolute object-cover w-full h-[832px] -z-10 hidden 2xl:hidden xl:hidden lg:block translate-y-[-5rem];
 }
 .bg-768 {
-  @apply absolute object-cover w-full h-[1194px] -z-10 hidden 2xl:hidden xl:hidden lg:hidden sm:block;
+  @apply absolute object-cover w-full h-[1194px] -z-10 hidden 2xl:hidden xl:hidden lg:hidden sm:block translate-y-[-3rem];
 }
 .bg-280 {
   @apply absolute object-cover w-full h-[1194px] -z-10 block 2xl:hidden xl:hidden lg:hidden sm:hidden;
@@ -193,7 +193,7 @@
   }
 }
 /* width 1024px */
-@media (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .hero-section .burger-hero-img {
     @apply w-[40vw] h-auto;
   }
@@ -246,4 +246,51 @@
   .hero-section {
     @apply flex flex-col-reverse justify-center items-center;
   }
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .hero-section .burger-hero-img {
+    @apply h-auto w-[414px] mt-7;
+  }
+  .hero-section .detail-product-hero .text {
+    @apply flex flex-col justify-center items-center text-center;
+  }
+  .hero-section .detail-product-hero .time-orders {
+    @apply flex justify-center;
+  }
+  .hero-section .detail-product-hero .btns {
+    @apply flex justify-center;
+  }
+  .hero-section .detail-product-hero .info .text h1 {
+    @apply text-[48px];
+  }
+  .hero-section .detail-product-hero .info .text h2 {
+    @apply text-[32px];
+  }
+  .hero-section .detail-product-hero .info .text p {
+    @apply text-[18px] pr-8 pt-[22px] pb-[30px];
+  }
+
+  .hero-section .detail-product-hero .info .time-orders {
+    @apply flex gap-[32px] mb-[50px];
+  }
+  .hero-section .detail-product-hero .info .time-orders .readyin,
+  .hero-section .detail-product-hero .info .time-orders .delivery {
+    @apply flex gap-[5px];
+  }
+  .hero-section .detail-product-hero .info .time-orders h4 {
+    @apply text-[20px];
+  }
+  .hero-section .detail-product-hero .info .time-orders h5 {
+    @apply text-[20px];
+  }
+
+  .hero-section .detail-product-hero .info .btns {
+    @apply text-[24px] flex flex-col justify-center items-center gap-[38px];
+  }
+  .hero-section .detail-product-hero .info .btns .buy-now {
+    @apply px-[54px] py-[27px] w-fit;
+  }
+}
+@media (max-width: 640px) {
+
 }
