@@ -15,7 +15,7 @@
   @apply absolute object-cover w-full h-[1194px] -z-10 hidden 2xl:hidden xl:hidden lg:hidden sm:block translate-y-[-3rem];
 }
 .bg-280 {
-  @apply absolute object-cover w-full h-[1194px] -z-10 block 2xl:hidden xl:hidden lg:hidden sm:hidden;
+  @apply absolute object-cover w-full h-[1194px] -z-10 block 2xl:hidden xl:hidden lg:hidden sm:hidden translate-y-[-17rem];
 }
 
 .Contents {
@@ -281,7 +281,7 @@
     @apply text-[20px];
   }
   .hero-section .detail-product-hero .info .time-orders h5 {
-    @apply text-[20px];
+    @apply text-[18px];
   }
 
   .hero-section .detail-product-hero .info .btns {
@@ -292,5 +292,52 @@
   }
 }
 @media (max-width: 640px) {
+  .hero-section .burger-hero-img {
+    @apply h-auto w-[210px] pt-[15px];
+  }
+  .hero-section .detail-product-hero .text {
+    @apply flex flex-col justify-center items-center text-center;
+  }
+  .hero-section .detail-product-hero .time-orders {
+    @apply flex justify-center;
+  }
+  .hero-section .detail-product-hero .btns {
+    @apply flex justify-center;
+  }
+  .hero-section .detail-product-hero .info .text h1 {
+    @apply text-[20px];
+  }
+  .hero-section .detail-product-hero .info .text h2 {
+    @apply text-[18px];
+  }
+  .hero-section .detail-product-hero .info .text p {
+    @apply text-[14px] pt-[10px] pb-[15px];
+  }
 
+  .hero-section .detail-product-hero .info .time-orders {
+    @apply flex gap-[32px] mb-[30px];
+  }
+  .hero-section .detail-product-hero .info .time-orders .readyin,
+  .hero-section .detail-product-hero .info .time-orders .delivery {
+    @apply flex flex-col items-center text-center;
+  }
+  .hero-section .detail-product-hero .info .time-orders .readyin .icon {
+    @apply w-10 h-auto;
+  }
+  .hero-section .detail-product-hero .info .time-orders .delivery .icon {
+    @apply w-auto h-10;
+  }
+  .hero-section .detail-product-hero .info .time-orders h4 {
+    @apply text-[16px];
+  }
+  .hero-section .detail-product-hero .info .time-orders h5 {
+    @apply text-[14px];
+  }
+
+  .hero-section .detail-product-hero .info .btns {
+    @apply text-[16px] flex flex-col justify-center items-center gap-[15px];
+  }
+  .hero-section .detail-product-hero .info .btns .buy-now {
+    @apply px-[30px] py-[15px] w-fit;
+  }
 }
