@@ -40,6 +40,9 @@
 
 
 @media (min-width: 1024px) {
+  .nav-mobile {
+    @apply hidden;
+  }
   .navbar {
     @apply flex justify-between pt-7;
   }
@@ -57,9 +60,51 @@
 
 @media (min-width: 280px) and (max-width: 1024px) {
   .navbar {
-    @apply flex justify-center items-center pt-7;
+    @apply flex justify-center items-center;
   }
   .nav-btns {
     @apply hidden gap-9;
+  }
+  .nav-mobile {
+    @apply fixed;
+  }
+  .bg-menu-nav {
+    @apply absolute object-fill;
+  }
+  .menu-nav-btn {
+    @apply p-4;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-mobile {
+    @apply -top-[21rem] right-10 w-[100px] h-[808px];
+  }
+  .navbar {
+    @apply pt-7;
+  }
+}
+@media (min-width: 450px) and (max-width: 768px) {
+  .navbar {
+    @apply pt-5;
+  }
+  .nav-mobile {
+    @apply -top-[21rem] right-5 w-[80px] h-[788px];
+  }
+  .logo-img {
+    @apply relative w-[168px] h-[108px];
+  }
+}
+@media (max-width: 450px) {
+  .bg-280 {
+    @apply translate-y-[-13rem];
+  }
+  .navbar {
+    @apply pt-3;
+  }
+  .nav-mobile {
+    @apply -top-[20rem] right-5 w-[60px] h-[728px];
+  }
+  .logo-img {
+    @apply relative w-[138px] h-[78px];
   }
 }
