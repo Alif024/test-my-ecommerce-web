@@ -21,6 +21,9 @@
 .Contents {
   @apply container mx-auto px-5;
 }
+.navbar.navbar-toggle {
+  @apply opacity-0;
+} 
 
 @media (min-width: 1440px) {
   .logo-img {
