@@ -21,9 +21,15 @@
 .Contents {
   @apply container mx-auto px-5;
 }
-.navbar.navbar-toggle {
+.Contents .navbar {
+  @apply h-36;
+}
+/* .Contents .navbar.navbar-toggle  {
+  @apply sticky;
+} */
+.navbar.navbar-toggle .logo-img {
   @apply opacity-0;
-} 
+}
 
 @media (min-width: 1440px) {
   .logo-img {
@@ -41,12 +47,15 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1026px) {
+  .Contents {
+    @apply pt-7;
+  }
   .nav-mobile {
     @apply hidden;
   }
   .navbar {
-    @apply flex justify-between pt-7;
+    @apply flex justify-between;
   }
   .nav-btns {
     @apply flex gap-9;
@@ -82,18 +91,19 @@
   }
 }
 @media (max-width: 1024px) {
+  .Contents {
+    @apply pt-0;
+  }
   .nav-mobile {
     @apply -top-[21rem] right-10 w-[100px] h-[808px];
-  }
-  .navbar {
-    @apply pt-7;
   }
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
-  .navbar {
-    @apply pt-5;
+  .Contents {
+    @apply pt-0;
   }
+
   .nav-mobile {
     @apply -top-[21rem] right-5 w-[80px] h-[788px];
   }
@@ -103,11 +113,11 @@
 }
 @media (max-width: 450px) {
   /* mobile bg display */
+  .Contents {
+    @apply pt-3;
+  }
   .bg-280 {
     @apply translate-y-[-18rem];
-  }
-  .navbar {
-    @apply pt-3;
   }
   .nav-mobile {
     @apply -top-[20rem] right-5 w-[60px] h-[728px];
